@@ -81,6 +81,7 @@ class Archive implements ArchiveInterface
      *
      * @return \ArrayIterator|MemberInterface[] An iterator
      */
+    #[\ReturnTypeWillChange]
     public function getIterator()
     {
         return new \ArrayIterator($this->getMembers());
